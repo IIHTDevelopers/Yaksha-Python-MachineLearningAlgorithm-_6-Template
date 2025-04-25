@@ -17,7 +17,7 @@ def load_heart_disease_data():
 
 
 # 2. Preprocess data
-def preprocess_data(df):
+def preprocess_heart_data(df):
     """
     Preprocess the data by separating features and target.
     
@@ -33,7 +33,7 @@ def preprocess_data(df):
 
 
 # 3. Split the data
-def split_data(X, y, test_size=0.2):
+def split_heart_data(X, y, test_size=0.2):
     """
     Split the data into training and testing sets.
     
