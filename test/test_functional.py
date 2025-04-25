@@ -18,14 +18,14 @@ class TestHeartDiseaseModel(unittest.TestCase):
     def test_heart_csv_loaded_correctly(self):
         try:
             if not self.df.empty and len(self.df) == 303:
-                self.test_obj.yakshaAssert("TestCSVLoadedCorrectly", True, "functional")
-                print("TestCSVLoadedCorrectly = Passed")
+                self.test_obj.yakshaAssert("TestCSVLoadedCorrectlyheart", True, "functional")
+                print("TestCSVLoadedCorrectlyheart = Passed")
             else:
-                self.test_obj.yakshaAssert("TestCSVLoadedCorrectly", False, "functional")
-                print("TestCSVLoadedCorrectly = Failed")
+                self.test_obj.yakshaAssert("TestCSVLoadedCorrectlyheart", False, "functional")
+                print("TestCSVLoadedCorrectlyheart = Failed")
         except Exception:
-            self.test_obj.yakshaAssert("TestCSVLoadedCorrectly", False, "functional")
-            print("TestCSVLoadedCorrectly = Failed")
+            self.test_obj.yakshaAssert("TestCSVLoadedCorrectlyheart", False, "functional")
+            print("TestCSVLoadedCorrectlyheart = Failed")
 
     def test_preprocessing_separates_target(self):
         try:
