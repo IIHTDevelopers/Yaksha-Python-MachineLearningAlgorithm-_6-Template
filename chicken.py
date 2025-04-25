@@ -17,8 +17,24 @@ def load_chicken_disease_data():
     pass
 
 
-# 2. Preprocess data (Categorical to numerical conversion)
-def preprocess_data(df):
+# 2. EDA Function to count chickens with age > 2
+def perform_eda_on_age(df):
+    """
+    Perform exploratory data analysis on the Age column.
+    
+    Args:
+        df (pandas.DataFrame): The input dataframe
+    
+    Returns:
+        int: Count of chickens with age > 2
+    """
+    # TODO: Count the number of chickens with age > 2
+    # TODO: Return the count
+    pass
+
+
+# 3. Preprocess data (Categorical to numerical conversion)
+def preprocess_chicken_data(df):
     """
     Preprocess the data by converting categorical features to numerical.
     
@@ -34,8 +50,8 @@ def preprocess_data(df):
     pass
 
 
-# 3. Split the data
-def split_data(X, y, test_size=0.2):
+# 4. Split the data
+def split_chicken_data(X, y, test_size=0.2):
     """
     Split the data into training and testing sets.
     
@@ -53,7 +69,7 @@ def split_data(X, y, test_size=0.2):
     pass
 
 
-# 4. Create and train Decision Tree model
+# 5. Create and train Decision Tree model
 def create_and_train_model(X_train, y_train):
     """
     Create and train a Decision Tree model.
