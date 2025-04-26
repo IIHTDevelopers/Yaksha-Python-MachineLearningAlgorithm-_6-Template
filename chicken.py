@@ -109,7 +109,6 @@ def check_new_data_from_json(model, df_encoded, json_file="chicken_data.json"):
     6. Print the results including:
        - Chicken input data
        - Model prediction
-       - Adjusted prediction (if necessary)
        - Disease type (if diseased)
        - Final diagnosis
     
