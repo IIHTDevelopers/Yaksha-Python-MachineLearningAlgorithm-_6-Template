@@ -115,7 +115,7 @@ def check_new_data_from_json(model, json_file="heart_data.json"):
     5. Print the results including:
        - Patient input data
        - Model confidence level
-       - Final prediction (adjusted if necessary)
+       - Final prediction 
        - Risk factors identified
        - Final diagnosis
     
