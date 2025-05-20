@@ -66,7 +66,7 @@ def check_new_data_from_json(model, json_file="heart_data.json"):
     # 5. Print the prediction result (Diseased or Healthy)
     # 6. Return the prediction (0 for Healthy, 1 for Diseased)
     pass
-    return int()
+    return -1
 
 
 # --- Pipeline Execution ---
