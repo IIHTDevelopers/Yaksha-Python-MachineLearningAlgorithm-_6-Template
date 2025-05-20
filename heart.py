@@ -13,8 +13,8 @@ def load_heart_disease_data():
     # 2. Limit to 303 records to match test expectations
     # 3. Print a message showing the number of records loaded
     # 4. Return the dataframe containing the heart disease data
-    pass
-    return None
+    df = pd.DataFrame()
+    return df
 
 
 # 2. Preprocess data
@@ -25,7 +25,7 @@ def preprocess_heart_data(df):
     # 3. Print a message indicating features and target are separated
     # 4. Return X and y
     pass
-    return None, None
+    return X, y
 
 
 # 3. Split the data
@@ -37,7 +37,7 @@ def split_heart_data(X, y, test_size=0.2):
     # 4. Print the sizes of the training and testing sets
     # 5. Return X_train, X_test, y_train, y_test
     pass
-    return None, None, None, None
+    eturn X_train, X_test, y_train, y_test
 
 
 def create_train_save_load_model(X_train, y_train, n_estimators=100, max_depth=None,
@@ -52,7 +52,8 @@ def create_train_save_load_model(X_train, y_train, n_estimators=100, max_depth=N
     # 7. Print a message indicating the model has been loaded
     # 8. Return the loaded model
     pass
-    return None
+    model = RandomForestClassifier()
+    return model
 
 
 # 6. Predict using model only (no manual checking)
@@ -65,7 +66,7 @@ def check_new_data_from_json(model, json_file="heart_data.json"):
     # 5. Print the prediction result (Diseased or Healthy)
     # 6. Return the prediction (0 for Healthy, 1 for Diseased)
     pass
-    return None
+    return int()
 
 
 # --- Pipeline Execution ---
