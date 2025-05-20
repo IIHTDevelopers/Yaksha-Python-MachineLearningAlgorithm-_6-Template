@@ -12,7 +12,7 @@ def load_chicken_disease_data():
     # 2. Print a message showing the number of records loaded
     # 3. Return the dataframe containing the chicken disease data
     pass
-    return None
+    return pd.DataFrame()
 
 
 # 2. EDA Function to count chickens with age > 2
@@ -20,13 +20,11 @@ def perform_eda_on_age(df):
     # TODO: 
     # 1. Check if 'Age' column exists in the dataframe
     # 2. If it exists, count chickens with age > 2
-    # 3. Print the count of chickens with age > 2
-    # 4. If 'Age' column doesn't exist, print appropriate message
-    # 5. Return the count of chickens with age > 2
-    pass
-    return None  # Return None to make the test fail until implemented
-
-
+    # 3. If 'Age' column doesn't exist, print appropriate message
+    # 4. Return the count of chickens with age > 2
+    count = 0
+    return count   
+    
 # 3. Preprocess data with explicit label encoding
 def preprocess_chicken_data(df):
     # TODO: 
@@ -39,7 +37,7 @@ def preprocess_chicken_data(df):
     # 7. Separate features (X) and target (y)
     # 8. Return X, y, and the encoded dataframe
     pass
-    return None, None, None
+     return X, y, encoded_df
 
 
 # 4. Split data
@@ -51,7 +49,7 @@ def split_chicken_data(X, y, test_size=0.2):
     # 4. Print the sizes of the training and testing sets
     # 5. Return X_train, X_test, y_train, y_test
     pass
-    return None, None, None, None
+    return pd.DataFrame(), pd.DataFrame(), pd.Series(dtype=int), pd.Series(dtype=int)
 
 
 # 5. Train model
@@ -62,7 +60,7 @@ def create_and_train_model(X_train, y_train):
     # 3. Print a message indicating the model has been trained
     # 4. Return the trained model
     pass
-    return None
+    return DecisionTreeClassifier()
 
 
 # 6. Predict from new JSON data
@@ -79,7 +77,7 @@ def check_new_data_from_json(model, json_file="chicken_data.json"):
     # 9. Print the prediction result (Healthy or Sick)
     # 10. Return the prediction (0 for Healthy, 1 for Sick)
     pass
-    return None
+    return int()
 
 
 # --- Pipeline Execution ---
