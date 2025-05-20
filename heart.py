@@ -37,7 +37,7 @@ def split_heart_data(X, y, test_size=0.2):
     # 4. Print the sizes of the training and testing sets
     # 5. Return X_train, X_test, y_train, y_test
     pass
-    eturn X_train, X_test, y_train, y_test
+    return X_train, X_test, y_train, y_test
 
 
 def create_train_save_load_model(X_train, y_train, n_estimators=100, max_depth=None,
