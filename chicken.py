@@ -77,7 +77,7 @@ def check_new_data_from_json(model, json_file="chicken_data.json"):
     # 9. Print the prediction result (Healthy or Sick)
     # 10. Return the prediction (0 for Healthy, 1 for Sick)
     pass
-    return int()
+    return -1
 
 
 # --- Pipeline Execution ---
