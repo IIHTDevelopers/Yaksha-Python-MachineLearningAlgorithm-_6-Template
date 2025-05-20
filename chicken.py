@@ -37,7 +37,7 @@ def preprocess_chicken_data(df):
     # 7. Separate features (X) and target (y)
     # 8. Return X, y, and the encoded dataframe
     pass
-     return X, y, encoded_df
+    return pd.DataFrame(), pd.Series(dtype='int'), pd.DataFrame()
 
 
 # 4. Split data
